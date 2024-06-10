@@ -1,0 +1,1 @@
+Membuat file dan mengisi file tersebut menggunakan command vim pada git bash

@@ -1,4 +1,4 @@
-Membuat file dan mengisi file tersebut menggunakan command vim pada git bash
+Terminal Command
 ls – Menampilkan daftar file dan direktori dalam folder saat ini.
 cd – Menavigasi ke folder lain.
 mkdir – Membuat folder baru.
@@ -7,3 +7,18 @@ rm – Menghapus file atau folder.
 cp – Menyalin file atau folder.
 mv – Memindahkan file atau folder.
 cat – Menampilkan isi file.
+
+Git Command
+git init: Inisialisasi repository Git baru.
+git clone: Kloning repository Git dari sumber yang ada.
+git add: Menambahkan file ke indeks Git.
+git commit: Commit perubahan ke repository Git.
+git push: Mengupload perubahan ke repository Git yang terhubung.
+git pull: Mengunduh perubahan dari repository Git yang terhubung.
+git status: Melihat status file dalam direktori saat ini.
+git log: Melihat riwayat perubahan dalam repository.
+git diff: Melihat perbedaan antara versi saat ini dan versi yang sebelumnya.
+git branch: Mengelola cabang (branch) dalam repository Git.
+git checkout: Mengubah antar cabang atau mengambil versi tertentu dari repository.
+git merge: Menggabungkan cabang atau perubahan ke cabang utama.
+git reset: Menghapus perubahan dalam indeks Git.

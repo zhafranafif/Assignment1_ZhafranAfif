@@ -1,1 +1,9 @@
 Membuat file dan mengisi file tersebut menggunakan command vim pada git bash
+ls – Menampilkan daftar file dan direktori dalam folder saat ini.
+cd – Menavigasi ke folder lain.
+mkdir – Membuat folder baru.
+touch – Membuat file baru.
+rm – Menghapus file atau folder.
+cp – Menyalin file atau folder.
+mv – Memindahkan file atau folder.
+cat – Menampilkan isi file.

@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
   <body>
@@ -38,14 +44,14 @@
           <button id="num" class="num" value="2">2</button>
           <button id="num" class="num" value="3">3</button>
           <button class="operator" value="-">-</button>
-          <button id="num" class="num">.</button>
+          <button id="num" class="num" value=".">.</button>
           <button id="num" class="num" value="0">0</button>
           <button class="operator" value="/">/</button>
           <button class="operator" value="*">x</button>
         </div>
         <div class="calc-button-lower">
           <button class="reset-button" onclick="resetCalc()">RESET</button>
-          <button class="assign-button" onclick="assignNum()">=</button>
+          <button class="assign-button assign" onclick="assignNum()">=</button>
         </div>
       </section>
     </main>

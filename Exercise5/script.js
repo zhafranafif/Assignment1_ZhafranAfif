@@ -87,5 +87,12 @@ function deleteInput(){
 }
 function assignNum(){
     const res = document.getElementById("textbox")
-    res.value = eval(res.value)
+    try{
+        res.value = eval(res.value)
+    }catch(e){
+        if(res.value = SyntaxError){
+            res.value = 'Syntax Error'
+            res.value = ''
+        }
+    }
 }

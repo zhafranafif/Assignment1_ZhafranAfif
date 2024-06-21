@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="navigation">
+          <h1>LOGO</h1>
+          <ul class="navigation-list">
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="/">Work</a>
+            </li>
+            <li>
+              <a href="/">Contact</a>
+            </li>
+            <li>
+              <a href="/">About me</a>
+            </li>
+          </ul>
+          <div class="nav-button">
+            <button>Sign Up</button>
+            <button>Login</button>
+          </div>
+          <div class="hamburger-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </nav>
+      <div class="header-info">
+        <h1>Play Traditional Game</h1>
+        <h3>Experience new traditional game play</h3>
+        <button>Play Now</button>
+      </div>
+      <div class="header-icon">
+        <h5>The Story</h5>
+        <i class="fa fa-caret-down"></i>
+      </div>
+    </header>
+    <section class="about">
+      <div class="about-container">
+        <div class="about-info">
+          <h3>What's so special?</h3>
+          <h1>The Games</h1>
+        </div>
+        <div class="carousel-container">
+          <div class="carousel fade">
+            <img src="./Assets/main-bg.jpg" alt="carousel" />
+          </div>
+          <div class="carousel fade">
+            <img src="./Assets/newsletter.png" alt="carousel" />
+          </div>
+          <div class="carousel fade">
+            <img src="./Assets/requirements.png" alt="carousel" />
+          </div>
+          <div class="carousel fade">
+            <img src="./Assets/rockpaperstrategy-1600.jpg" alt="carousel" />
+          </div>
+          <a class="prev" onclick="nextCarousel(-1)">❮</a>
+          <a class="next" onclick="nextCarousel(1)">❯</a>
+          <div class="dot-container">
+            <span class="dot" onclick="currentCarousel(1)"></span>
+            <span class="dot" onclick="currentCarousel(2)"></span>
+            <span class="dot" onclick="currentCarousel(3)"></span>
+            <span class="dot" onclick="currentCarousel(4)"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="game-features">
+      <div class="game-features-container">
+        <div class="game-features-info">
+          <h3>What's so special ?</h3>
+          <h1>Features</h1>
+        </div>
+        <div class="game-features-feature">
+          <div class="feature-input">
+            <span
+              type="radio"
+              class="dot-feature dot-feature-withcolor"
+              id="dot1"
+            ></span>
+            <div class="dot-feature-line"></div>
+            <span type="radio" class="dot-feature" id="dot2"></span>
+            <span type="radio" class="dot-feature" id="dot3"></span>
+          </div>
+          <div class="feature-label">
+            <label for="dot1" class="dot-label1"
+              >Traditional Game <br /><span
+                >If you miss your childhood, we provide many traditional games
+                here</span
+              ></label
+            >
+            <label for="dot2" class="dot-label2">Game Suit</label>
+            <label for="dot3" class="dot-label3">Tbd</label>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="system-req">
+      <div class="system-req-container">
+        <h2>Can my computer ran this game ?</h2>
+        <div class="requirement">
+          <h1>System<br />requirements</h1>
+          <div class="requirement-detail">
+            <h3>
+              <span>OS:</span><br />Windows 7 64-bit only (No OSX support at
+              this time)
+            </h3>
+            <h3>
+              <span>PROCESSOR:</span><br />Intel Core 2 Duo @ 2.4 GHZ or AMD
+              Athlon X2 @ 2.8 GHZ
+            </h3>
+            <h3><span>MEMORY:</span><br />4 GB RAM</h3>
+            <h3><span>STORAGE:</span><br />8 GB available space</h3>
+            <h3 class="graphics">
+              <span>GRAPHICS:</span><br />NVIDIA GeForce GTX 660 2GB or AMD
+              Radeon HD 7850 DirectX11 (Shader Model 5)
+            </h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="press-quotes">
+      <div class="quotes-info">
+        <h1>Top Scores</h1>
+        <p>This top score from various games provided on this platform</p>
+        <button>see more</button>
+      </div>
+      <div class="quotes-container">
+        <div class="quotes-card evan">
+          <div class="quotes-user-container">
+            <div class="quotes-user">
+              <img src="./Assets/evan.png" alt="Evan" />
+              <div class="quotes-name">
+                <h3>Evan Lathi</h3>
+                <h4>PC Gamer</h4>
+              </div>
+            </div>
+            <div class="quotes-twitter">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </div>
+          </div>
+          <q>One of my gaming highlights of the year.</q>
+          <h6>June 18, 2021</h6>
+        </div>
+        <div class="quotes-card jada">
+          <div class="quotes-user-container">
+            <div class="quotes-user">
+              <img src="./Assets/jada.png" alt="Evan" />
+              <div class="quotes-name">
+                <h3>Jada Griffin</h3>
+                <h4>Nerdreactor</h4>
+              </div>
+            </div>
+            <div class="quotes-twitter">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </div>
+          </div>
+          <q
+            >The next big thing in the world of streaming and survival games.</q
+          >
+          <h6>July 10, 2021</h6>
+        </div>
+        <div class="quotes-card aaron">
+          <div class="quotes-user-container">
+            <div class="quotes-user">
+              <img src="./Assets/aaron.png" alt="Aaron" />
+              <div class="quotes-name">
+                <h3>Aaron Williams</h3>
+                <h4>Uproxx</h4>
+              </div>
+            </div>
+            <div class="quotes-twitter">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </div>
+          </div>
+          <q>Snoop Dogg Playing The Wildly Entertaining 'SOS' Is Ridiculous.</q>
+          <h6>December 24, 2018</h6>
+        </div>
+      </div>
+    </section>
+    <section class="newsletter-footer">
+      <div class="newsletter">
+        <h3>Want to stay in<br />touch ?</h3>
+        <h1>Newsletter<br />Subscribe</h1>
+        <p>
+          In order to start receiving our news, all you have to do is enter your
+          email address. Everything else will be taken care of by us. We will
+          send you emails containing information about game. We don't spam
+        </p>
+        <div class="newsletter-button">
+          <div class='input-email'><label for='email'>Your email address</label>
+            <input type='text' name='email' placeholder="youremail@binar.co.id"></input></div>
+          <button class="button-subscribe">Subscribe now</button>
+        </div>
+      </div>
+      <div class="footer">
+        <ul class="nav-footer">
+          <li>
+            <a>Main</a>
+          </li>
+          <li>
+            <a>About</a>
+          </li>
+          <li>
+            <a>Game Feature</a>
+          </li>
+          <li>
+            <a>System Requirements</a>
+          </li>
+          <li>
+            <a>Quotes</a>
+          </li>
+          <li>
+            <a><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          </li>
+          <li>
+            <a><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          </li>
+          <li>
+            <a><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+          </li>
+          <li>
+            <a><i class="fa fa-twitch" aria-hidden="true"></i></a>
+          </li>
+        </ul>
+        <hr />
+        <div class="footer-tm">
+          <p>&copy; 2018 Your Games, Inc. All Rights Reserved</p>
+          <ul class="tm-list">
+            <li class="privacy">
+              <a>Privacy Policy</a>
+            </li>
+            <li>
+              <a>Terms Of Services</a>
+            </li>
+            <li class="coc">
+              <a>Code Of Conduct</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>

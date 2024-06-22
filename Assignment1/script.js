@@ -36,3 +36,9 @@ function showCarousel(n){
     carousel[carouselIndex - 1].style.display = "block"
     dots[carouselIndex - 1].className += " active"
 }
+// Scroll
+document.querySelector(".header-icon").addEventListener("click", function(){
+    document.querySelector(".about").scrollIntoView({
+        behavior: "smooth"
+    })
+})

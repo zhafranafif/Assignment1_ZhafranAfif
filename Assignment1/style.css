@@ -55,13 +55,33 @@ header .header-icon{
     align-items: center;
     width: 100%;
     color: white;
-    margin-top: 400px;
+    margin-top: 350px;
     font-family: "Open Sans", sans-serif;
     text-transform: uppercase;
     font-weight: 700;
+	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+	transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+}
+header .header-icon:hover{
+    cursor: pointer;
 }
 header .header-icon i {
     font-size: 24px;
+}
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
 }
 nav{
     width: 100%;
@@ -98,6 +118,9 @@ nav ul li a{
     justify-content: center;
     align-items: center;
     margin-right: 16px;
+}
+.nav-button:hover{
+    cursor: pointer;
 }
 .nav-button button{
     color: white;
@@ -375,6 +398,7 @@ nav img{
     justify-content: space-evenly;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
 }
 .quotes-info{
     display: flex;
@@ -440,9 +464,10 @@ nav img{
     gap: 18px;
 }
 .quotes-user img {
-    width: 40px;
-    height: 40px;
+    width: 38x;
+    height: 38px;
     border-radius: 50%;
+    filter: drop-shadow(4px 3px 1px #f3af34);
 }
 .evan,.aaron{
     margin-left: 100px;
@@ -546,6 +571,14 @@ nav img{
     gap: 24px;
     list-style-type: none;
 }
+.footer .nav-icon {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    align-items: center;
+    list-style-type: none;
+    font-size: 18px;
+}
 .footer .nav-footer:hover{
     cursor: pointer;
 }
@@ -603,6 +636,15 @@ nav img{
         left: 0;
         background-color: black;
     }
+    header .header-icon{
+        margin-top: 200px;
+    }
+    header .header-info h1{
+        font-size: 36px;
+    }
+    header .header-info h3{
+        font-size: 18px;
+    }
     .hamburger-menu{
         display: block;
         cursor: pointer;
@@ -628,7 +670,7 @@ nav img{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding-top: 100px;
+        padding-top: 20px;
     }
     .carousel-container{
         top: 0;
@@ -695,6 +737,7 @@ nav img{
         margin-left: 0;
         padding-left: 20px;
         padding-right:20px;
+        height: 100%;
     }
     .newsletter h3{
         font-size: 14px;
@@ -709,11 +752,106 @@ nav img{
     .newsletter p{
         font-size: 12px;
     }
+    .footer hr{
+        display: none;
+    }
     .footer{
-        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
     }
     .footer .nav-footer{
+        display: flex;
+        flex-direction: column;
+        align-items: normal;
+        gap: 8px;
+    }
+    .footer .footer-tm .tm-list .privacy{
+        border-right: none;
+    }
+    .footer .footer-tm .tm-list .coc{
+        border-left: none;
+    }
+}
+@media(min-width:768px) and (max-width:1000px){
+    header .header-info h1{
+        font-size: 56px;
+    }
+    .about .about-container{
+        padding: 0;
+        overflow-y: hidden;
+        padding-top: 150px;
+    }
+    .carousel-container{
+        top: 0;
+    }
+    .game-features-info{
+        text-align: center;
+    }
+    .game-features-container{
+        padding: 0;
+    }
+    .newsletter-footer{
+        height: 100%;
+    }
+    .system-req{
+        height: 100%;
+    }
+    .requirement h1{
+        font-size: 24px;
+        text-align: center;
+    }
+    .requirement{
+        padding-top: 50px;
+        margin: 0 auto;
+        padding-bottom: 50px;
+        width: 350px;
+    }
+    .press-quotes{
+        display: flex;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
+        gap: 20px;
+        height: 100%;
+    }
+    .quotes-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .quotes-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .quotes-card{
+        width: 300px;
+    }
+    .evan,.aaron{
+        margin-left: 0;
+    }
+    .jada{
+        margin-right: 0;
+    }
+    .newsletter{
+        margin-left: 30%;
+        padding-right: 20px;
+    }
+    .newsletter h3{
+        margin-top: 30px;
+        font-size: 18px;
+    }
+    .newsletter h1{
+        font-size: 36px;
+    }
+    .newsletter p{
+        font-size: 14px;
+    }
+    .newsletter-footer{
+        gap: 40px;
     }
 }
 
